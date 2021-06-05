@@ -15,18 +15,18 @@ from scipy.stats import norm
 st.set_page_config(initial_sidebar_state='auto')
 
 seed(100)
-st.sidebar.markdown("**Indicate the Capacity of the Facility.**")
+st.sidebar.markdown("**Indicate the Capacity.**")
 
 capacity = st.sidebar.number_input('', 0, 1000000, 3500)
 
 st.sidebar.write("")
 st.sidebar.write("")
-st.sidebar.markdown("**Indicate count of UC in each category.**")
+st.sidebar.markdown("**Indicate count in each category.**")
 
 
-count1 = st.sidebar.number_input('How many UC in Category 1?', 0, 1000000, 1000)
-count2 = st.sidebar.number_input('How many UC in Category 2?', 0, 1000000, 1000)
-count3 = st.sidebar.number_input('How many UC in Category 3?',  0, 1000000, 1000)
+count1 = st.sidebar.number_input('How many in Category 1?', 0, 1000000, 1000)
+count2 = st.sidebar.number_input('How many in Category 2?', 0, 1000000, 1000)
+count3 = st.sidebar.number_input('How many in Category 3?',  0, 1000000, 1000)
 
 st.sidebar.write("")
 st.sidebar.write("")
@@ -150,11 +150,6 @@ plt.rcParams.update({'font.size': 22})
 """
 ## "What-If"  Simulator   
 
-The chart below shows how many UC will be present in a facility assuming the parameters selected in the sidebar. 
-
-The red line on the chart indicates capacity, while the green, blue, and purple bars represent the number of children in category 1, 2 and 3 respectively. 
-
-Use the widgets in the left to see how changes in number of UC, the average time within the system and the standard deviation impact the total population over time. 
 
 """
 
